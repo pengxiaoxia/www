@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background: red;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 110px auto;
+            border: 10px solid;
+            border-color: #ffffff #ffffff transparent ;
+            border-radius: 100%;
+            animation: animting1 .6s linear infinite;
+        }
+        @keyframes animting1 {
+            to{
+                transform: rotate(0deg) scale(1);
+
+            }
+            50%{
+                transform: rotate(180deg)scale(.5);
+
+            }
+
+            from{
+                transform: rotate(360deg) scale(1);
+
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box"></div>
+
+
+</body>
+</html>

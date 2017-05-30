@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background: red;;
+        }
+        .box{
+           width: 400px;
+            margin: 100px auto;
+        }
+        .box>div{
+            width: 100px;
+            height: 100px;
+            background: #ffffff;
+            margin-left: 30px;
+            float: left;
+            border-radius: 100%;
+            animation: animting 1s linear infinite;
+
+
+        }
+       /* .box>div:nth-child(1){
+            animation-delay:-.32s ;
+        }
+        .box>div:nth-child(2){
+            animation-delay:-.22s ;
+        }
+        .box>div:nth-child(3){
+            animation-delay:0s ;
+        }
+*/
+        .box:nth-child(1)>div:nth-child(1){
+            animation-delay:-.32s ;
+        }
+        .box:nth-child(1)>div:nth-child(2){
+            animation-delay:-.22s ;
+        }
+        .box:nth-child(1)>div:nth-child(3){
+            animation-delay:0s ;
+        }
+        .box:nth-child(2)>div:nth-child(1){
+            animation-delay:0s ;
+        }
+        .box:nth-child(2)>div:nth-child(2){
+            animation-delay:-.22s ;
+        }
+        .box:nth-child(2)>div:nth-child(3){
+            animation-delay:.32s ;
+        }
+        .box:nth-child(3)>div:nth-child(1){
+            animation-delay:-.32s ;
+        }
+        .box:nth-child(3)>div:nth-child(2){
+            animation-delay:-.22s ;
+        }
+        .box:nth-child(3)>div:nth-child(3){
+            animation-delay:0s ;
+        }
+
+
+
+        @keyframes animting{
+            0%{
+                transform: scale(1);
+                opacity: 1;
+            }
+            50%{
+                transform: scale(.6);
+                opacity: .6;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+
+</body>
+</html>
